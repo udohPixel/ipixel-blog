@@ -1,0 +1,54 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "First ogananwa de illo eveniet commodi fuga fugiat laboriosam expedit",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta! Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate.",
+      "author": "Nsidibe Gregory",
+      "authorPhoto": "",
+      "category": "Entertainment",
+      "date": "Jun 13 2023"
+    },
+    {
+      "id": 2,
+      "title": "Second Provident de illo eveniet commodi fuga fugiat laboriosam expedit",
+      "body": "Second Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta! Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate.",
+      "author": "Telma Olubayo",
+      "authorPhoto": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "Sports",
+      "date": "Dec 8 2023"
+    },
+    {
+      "id": 3,
+      "title": "Third ogananwa de illo eveniet commodi fuga fugiat laboriosam expedit",
+      "body": "Third Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta! Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate.",
+      "author": "Faith Lawrence",
+      "authorPhoto": "",
+      "category": "Politics",
+      "date": "Feb 28 2023"
+    },
+    {
+      "id": 4,
+      "title": "Forth Provident de illo eveniet commodi fuga fugiat laboriosam expedit",
+      "body": "Third Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta! Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate.",
+      "author": "Andrew Johnson",
+      "authorPhoto": "",
+      "category": "Sports",
+      "date": "Feb 28 2023"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Politics"
+    },
+    {
+      "id": 2,
+      "name": "Entertainment"
+    },
+    {
+      "id": 3,
+      "name": "Sports"
+    }
+  ]
+}
