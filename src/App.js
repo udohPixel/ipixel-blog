@@ -1,8 +1,9 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home';
 import Header from './Layouts/Header';
 import Footer from './Layouts/Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import BlogDetails from './Pages/BlogDetails';
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
 
         <div className="content">
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails />
             </Route>
           </Switch>
         </div>
