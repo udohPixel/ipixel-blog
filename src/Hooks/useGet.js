@@ -6,11 +6,14 @@ const useGet = (url) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // abort controller
+    const abortCtrl = new AbortController();
+
     // fetch data
     const getData = async () => {
       try {
         // fetch the data from the api
-        const res = await fetch(url);
+        const res = await fetch(url, { signal: abortCtrl.signal });
 
         // check if res is not ok
         if (!res.ok && res.status === 404) {
@@ -23,16 +26,19 @@ const useGet = (url) => {
         // convert the res to json
         const json = await res.json();
 
-        await setData(json);
+        setData(json);
+        setIsLoading(false);
+        setError(null);
       } catch (err) {
-        setError(err?.message);
+        if (err.name !== "AbortError") {
+          setIsLoading(false);
+          setError(err?.message);
+        }
       }
     }
     getData();
 
-    setIsLoading(false);
-    setError(null);
-
+    return () => abortCtrl.abort();
   }, [url]);
 
   return { data, isLoading, error };
