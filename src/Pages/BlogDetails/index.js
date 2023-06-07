@@ -72,7 +72,7 @@ const BlogDetails = () => {
                     <div className="flex gap-2 items-center text-gray-500">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-calendar w-4 h-4 text-gray-400 dark:text-gray-600" viewBox="0 0 16 16"> <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" /> </svg>
                       <span className="w-max block font-normal text-gray-500 sm:mt-0">
-                        {blog.date}
+                        {`${blog.date.split(" ")[1]} ${blog.date.split(" ")[2]} ${blog.date.split(" ")[3]}`}
                       </span>
                     </div>
                   </div>

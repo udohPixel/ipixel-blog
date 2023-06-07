@@ -1,11 +1,13 @@
 import './index.css';
 import { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 const BlogList = ({ blogs, categories, title }) => {
   const [allBlogs, setAllBlogs] = useState([...blogs]);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const history = useHistory();
 
   const handleCategoryChange = (e) => {
     // get selected category
@@ -42,6 +44,27 @@ const BlogList = ({ blogs, categories, title }) => {
     // set new blogs state to filtered blogs
     setAllBlogs(blogsBySearchKeyword);
   };
+
+  const handleBlogDelete = (e) => {
+    const id = e.target.value;
+
+    const deleteBlog = async () => {
+      try {
+        setIsLoading(true);
+
+        await fetch("http://localhost:8000/blogs/" + id, {
+          method: "DELETE"
+        });
+
+        console.log("Blog was deleted successfully!");
+        setIsLoading(false);
+        history.push("/");
+      } catch (err) {
+        console.log("Something went wrong!");
+      }
+    };
+    deleteBlog();
+  }
 
   return (
     <div className="mt-12 blog-list">
@@ -98,11 +121,11 @@ const BlogList = ({ blogs, categories, title }) => {
             <div className="sm:p-2 sm:pl-0 sm:w-4/6">
               <Link to={`/blogs/${blog.id}`}>
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
-                  {blog.title.substring(0, 50) + "..."}
+                  {(blog.title.length > 50) ? `${blog.title.substring(0, 50)}...` : blog.title.substring(0, 50)}
                 </h3>
               </Link>
               <p className="my-4 text-gray-600 dark:text-gray-300">
-                {blog.body.substring(0, 120) + "..."}
+                {(blog.body.length > 120) ? `${blog.body.substring(0, 120)}...` : blog.body.substring(0, 120)}
               </p>
               <div className="flex gap-4 mt-4">
                 <button onClick={(e) => handleCategoryChange(e)} value={blog.categoryId} className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
@@ -124,9 +147,17 @@ const BlogList = ({ blogs, categories, title }) => {
                 <div className="flex gap-2 items-center text-gray-500">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-calendar w-4 h-4 text-gray-400 dark:text-gray-600" viewBox="0 0 16 16"> <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" /> </svg>
                   <span className="w-max block text-gray-500 sm:mt-0">
-                    {blog.date}
+                    {`${blog.date.split(" ")[1]} ${blog.date.split(" ")[2]} ${blog.date.split(" ")[3]}`}
                   </span>
                 </div>
+              </div>
+              <div className="flex gap-4 mt-4">
+                <Link to={`/update-blog/${blog.id}`} className="w-full py-1 px-4 text-small font-medium text-center rounded-full transition bg-blue-300 hover:bg-blue-100 active:bg-blue-400 focus:bg-blue-300 sm:w-max">
+                  Edit
+                </Link>
+                <button onClick={(e) => handleBlogDelete(e)} value={blog.id} className="w-full py-1 px-4 text-small font-medium text-center rounded-full transition bg-red-300 hover:bg-red-100 active:bg-red-400 focus:bg-red-300 sm:w-max">
+                  Delete
+                </button>
               </div>
 
             </div>

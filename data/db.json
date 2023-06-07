@@ -5,27 +5,27 @@
       "title": "First ogananwa de illo eveniet commodi fuga fugiat laboriosam expedit",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta! Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate.",
       "author": "Nsidibe Gregory",
-      "authorPhoto": "",
+      "authorPhoto": "https://www.shutterstock.com/image-photo/portrait-smiling-red-haired-millennial-260nw-1194497251.jpg",
       "categoryId": 2,
-      "date": "Jun 13 2023"
+      "date": "Tue Apr 25 2023 15:04:18 GMT+0100 (West Africa Standard Time)"
     },
     {
       "id": 2,
       "title": "Second Provident de illo eveniet commodi fuga fugiat laboriosam expedit",
       "body": "Second Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta! Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate.",
       "author": "Telma Olubayo",
-      "authorPhoto": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "authorPhoto": "",
       "categoryId": 3,
-      "date": "Dec 8 2023"
+      "date": "Sat May 06 2023 18:10:41 GMT+0100 (West Africa Standard Time)"
     },
     {
       "id": 3,
       "title": "Third ogananwa de illo eveniet commodi fuga fugiat laboriosam expedit",
       "body": "Third Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta! Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate.",
       "author": "Faith Lawrence",
-      "authorPhoto": "",
+      "authorPhoto": "https://www.shutterstock.com/image-photo/headshot-portrait-smiling-african-american-260nw-1653171391.jpg",
       "categoryId": 1,
-      "date": "Feb 28 2023"
+      "date": "Mon May 22 2023 18:10:41 GMT+0100 (West Africa Standard Time)"
     },
     {
       "id": 4,
@@ -34,7 +34,52 @@
       "author": "Andrew Johnson",
       "authorPhoto": "",
       "categoryId": 3,
-      "date": "Feb 28 2023"
+      "date": "Sat May 27 2023 12:11:20 GMT+0100 (West Africa Standard Time)"
+    },
+    {
+      "title": "Another sample blog title",
+      "categoryId": 2,
+      "author": "Iniobong Phillip",
+      "authorPhoto": "https://www.shutterstock.com/image-photo/close-side-profile-photo-handsome-260nw-1447435760.jpg",
+      "body": "Yet another sample content goes here. Thanks",
+      "date": "Thu Jun 01 2023 18:10:41 GMT+0100 (West Africa Standard Time)",
+      "id": 6
+    },
+    {
+      "title": "The sample blog title we're just testing",
+      "categoryId": 1,
+      "author": "William Etuk",
+      "authorPhoto": "https://www.shutterstock.com/image-photo/head-shot-portrait-close-smiling-260nw-1714666150.jpg",
+      "body": "This is the content",
+      "date": "Thu Jun 01 2023 18:18:37 GMT+0100 (West Africa Standard Time)",
+      "id": 7
+    },
+    {
+      "title": "New sample blog post",
+      "categoryId": 1,
+      "author": "Oluwaseye Quadri",
+      "authorPhoto": "https://www.shutterstock.com/image-photo/happy-young-millennial-indian-businessman-260nw-2153777469.jpg",
+      "body": "The content of the page goes here 1234",
+      "date": "Sat Jun 03 2023 18:27:31 GMT+0100 (West Africa Standard Time)",
+      "id": 8
+    },
+    {
+      "title": "The Blog sample title ",
+      "categoryId": 1,
+      "author": "Hope Ekomobong",
+      "authorPhoto": "https://www.shutterstock.com/image-photo/portrait-happy-millennial-black-mixed-260nw-2029044620.jpg",
+      "body": "This is a sample content",
+      "date": "Sun Jun 04 2023 18:27:31 GMT+0100 (West Africa Standard Time)",
+      "id": 9
+    },
+    {
+      "title": "Here we go again edited",
+      "categoryId": 1,
+      "author": "Paul Paulino",
+      "authorPhoto": "",
+      "body": "This is just some lorem content to fill up some space. Thank you for reading. edited now now",
+      "date": "Tue Jun 06 2023 23:36:31 GMT+0100 (West Africa Standard Time)",
+      "id": 10
     }
   ],
   "categories": [
