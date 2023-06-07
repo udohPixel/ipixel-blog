@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <nav className="fixed z-10 w-full dark:bg-gray-900 bg-white md:absolute md:bg-transparent">
+      <nav className="fixed z-10 w-full dark:bg-gray-900 bg-white">
         <div className="container m-auto px-2 md:px-12 lg:px-7">
           <div className="flex flex-wrap items-center justify-between py-4 gap-6 md:py-4 md:gap-0 relative">
             <input type="checkbox" name="toggle_nav" id="toggle_nav" className="hidden peer" />
